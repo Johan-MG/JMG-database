@@ -1,0 +1,2 @@
+CREATE TYPE jmg.status AS ENUM
+    ('PENDING', 'PAID', 'CANCELED');
