@@ -1,6 +1,7 @@
 CREATE TABLE jmg.purchase(
     id                  SERIAL,
     description         TEXT NOT NULL,
+    cost                NUMERIC(10,2),
     payment_method      jmg.payment_method NOT NULL,
     store               INTEGER,
     user_pay            INTEGER NOT NULL,
