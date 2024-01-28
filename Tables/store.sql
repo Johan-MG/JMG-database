@@ -1,5 +1,5 @@
 CREATE TABLE jmg.store(
-    id                  SERIAL,
+    id             SERIAL,
     name           CITEXT NOT NULL,
     PRIMARY KEY (id)
 );
