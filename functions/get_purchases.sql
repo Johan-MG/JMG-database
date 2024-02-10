@@ -18,7 +18,8 @@ BEGIN
     FROM jmg.purchase p
     LEFT JOIN jmg.store s ON s.id = p.store_id
     LEFT JOIN jmg.user u ON u.id = p.user_pay_id
-    LEFT JOIN jmg.user up ON up.id = p.user_purchase_id;
+    LEFT JOIN jmg.user up ON up.id = p.user_purchase_id
+    ORDER BY p.id;
     
 END;
 $$
